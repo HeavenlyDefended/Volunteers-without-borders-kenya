@@ -1,5 +1,5 @@
 const FORM_ENDPOINT = "";
-const CONTACT_EMAIL = "johnpaulouma-mbasro@volunteerswithoutborders-kenya.org";
+const CONTACT_EMAIL = "info@volunteerswithoutborders-kenya.org";
 
 const form = document.querySelector("#leaseInquiryForm");
 const statusMessage = document.querySelector("#formStatus");
