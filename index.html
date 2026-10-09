@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Volunteers Without Borders Kenya | Partners & Donations</title>
-  <meta name="description" content="Volunteers Without Borders Kenya is a Nairobi-based NGO seeking partners and donations for community programs, land-based rental sustainability, the Blue Gum Eucalyptus project, and conservation of the Bar O Lengu/Lake Kanyaboli ecosystem.">
+  <title>VWB Kenya | CivicCanopy, Community & Conservation</title>
+  <meta name="description" content="Volunteers Without Borders Kenya runs community programmes in Siaya, Kenya. Explore CivicCanopy partnerships, supporter rewards, Adopt a Tree, women and youth empowerment, and Lake Kanyaboli conservation.">
   <link rel="canonical" href="https://volunteerswithoutborders-kenya.org/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1632,13 +1632,51 @@
         grid-template-columns: 1fr;
       }
     }
-  </style>
+
+/* CivicCanopy integration */
+section[id] {scroll-margin-top: 110px;}
+.skip-link{position:fixed;left:1rem;top:-100px;z-index:100;background:white;color:#14231d;padding:1rem}.skip-link:focus{top:1rem}
+:focus-visible{outline:3px solid #c58b36;outline-offset:4px}
+.canopy-section{background:#123b2d;color:#fff;border-top:4px solid #c58b36;padding:clamp(3rem,6vw,6rem) max(1rem,calc((100% - 1180px)/2));}
+.canopy-section h2{font-family:'Libre Caslon Text',Georgia,serif;font-size:clamp(2rem,4vw,3.5rem);line-height:1.2;max-width:850px;margin:1rem 0}
+.canopy-section p{color:#e2eee6;font-size:1rem;max-width:760px}
+.canopy-kicker{color:#f3ce8b;letter-spacing:.12em;text-transform:uppercase;font-size:.875rem}
+.canopy-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.5rem;margin:2.5rem 0}
+.canopy-card{border:1px solid #648675;padding:1.5rem;border-radius:8px;background:#194b39}
+.canopy-card h3{font-size:1.25rem;color:white;margin:.75rem 0}.canopy-card p{margin:0}
+.canopy-number{color:#f3ce8b;font-size:.875rem}
+.canopy-links{display:flex;flex-wrap:wrap;gap:1rem;margin-top:1.5rem}
+.canopy-links a{display:inline-block;padding:.85rem 1.2rem;border:1px solid #f3ce8b;border-radius:4px;text-decoration:none;font-weight:700;color:white;font-size:1rem}
+.canopy-links a:first-child{background:#f3ce8b;color:#123b2d}
+.canopy-links a:hover{background:white;color:#123b2d}
+.canopy-focus{border-top:1px solid #648675;padding-top:1.5rem}
+.canopy-focus a{color:#f3ce8b;text-underline-offset:4px}
+@media(max-width:850px){.canopy-grid{grid-template-columns:1fr}.nav{flex-wrap:wrap}.nav-links{gap:.7rem}.brand span{font-size:.9rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}[data-animate]{opacity:1!important;transform:none!important}}
+
+
+/* Supporter rewards */
+.rewards-section{padding:clamp(3rem,6vw,6rem) max(1rem,calc((100% - 1180px)/2));background:#f5f8f5;}
+.rewards-section h2{font-family:'Libre Caslon Text',Georgia,serif;font-size:clamp(2rem,4vw,3rem);line-height:1.2;max-width:850px;}
+.rewards-intro{max-width:760px;font-size:1.125rem;}
+.rewards-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.25rem;margin-top:2rem;}
+.reward-card{display:flex;flex-direction:column;padding:1.6rem;border:1px solid #bdcdbf;border-radius:12px;background:#fff;min-width:0;}
+.reward-card h3{font-size:1.35rem;margin:.65rem 0;}.reward-card p,.reward-card li{font-size:1rem;}
+.reward-card ul{padding-left:1.2rem;margin-bottom:1.5rem;}.reward-card a{margin-top:auto;align-self:flex-start;text-decoration:none;padding:.7rem 1rem;background:#145f42;color:#fff;border-radius:6px;font-size:1rem;font-weight:700;}
+.reward-price{font-size:.9rem;font-weight:700;color:#52665a;}.reward-card .reward-label{font-size:.875rem;color:#846028;letter-spacing:.08em;text-transform:uppercase;}
+.reward-card.premium{grid-column:span 2;background:#123b2d;color:#fff;border:2px solid #c58b36;}.reward-card.premium .reward-price,.reward-card.premium .reward-label{color:#f3ce8b;}.reward-card.premium a{background:#f3ce8b;color:#123b2d;}
+.reward-terms{margin-top:2rem;border-left:3px solid #c58b36;padding:1rem 1.5rem;background:#fff;}.reward-terms p{max-width:900px;}.reward-terms summary{font-weight:700;cursor:pointer;font-size:1rem;}.reward-terms a{text-underline-offset:4px;}
+@media(min-width:981px) and (max-width:1250px){.nav-links{gap:.65rem;font-size:.875rem}.brand img{width:150px}.nav-links .button{padding:0 12px}}
+@media(max-width:800px){.rewards-grid{grid-template-columns:1fr}.reward-card.premium{grid-column:auto}}
+
+</style>
 </head>
 <body>
+<a class="skip-link" href="#home">Skip to content</a>
   <header class="site-header">
     <nav class="nav" aria-label="Primary navigation">
       <a class="brand" href="#home" aria-label="Volunteers Without Borders Kenya home">
-        <img src="assets/vwb-logo.png" alt="Volunteers Without Borders Kenya logo">
+        <img loading="lazy" src="assets/vwb-logo.png" alt="Volunteers Without Borders Kenya logo">
         <span>Volunteers Without Borders Kenya</span>
       </a>
       <button class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">Menu</button>
@@ -1647,10 +1685,12 @@
         <a href="#projects">Projects</a>
         <a href="#conservation">Conservation</a>
         <a href="#land-rentals">Land rentals</a>
+        <a href="#civiccanopy">CivicCanopy</a>
+        <a href="#rewards">Rewards</a>
         <a href="#partners">Partners</a>
         <a href="#gallery">Gallery</a>
         <a href="#contact">Contact</a>
-        <a class="button" href="https://buy.stripe.com/fZe9BA9vebKWa6k3cc">Donate</a>
+        <a class="button" href="#rewards">Support a project</a>
       </div>
     </nav>
   </header>
@@ -1658,20 +1698,20 @@
   <main id="home">
     <section class="hero" aria-label="Volunteers Without Borders Kenya hero">
       <div class="hero-inner">
-        <span class="eyebrow">Nairobi, Kenya | Community-led development</span>
-        <h1>Partners for<br>dignity,<br>opportunity,<br>and sustainable<br>local income.</h1>
+        <span class="eyebrow">Siaya, Kenya | Community-led development</span>
+        <h1>Local leadership.<br>Shared opportunity.<br>Lasting change.</h1>
         <p>Volunteers Without Borders Kenya brings volunteers, donors, and local leaders together to strengthen education, health, youth opportunity, environmental care, and income-generating community assets.</p>
         <div class="hero-actions">
           <a class="button" href="https://buy.stripe.com/fZe9BA9vebKWa6k3cc">Donate securely</a>
-          <a class="button secondary" href="#projects">Explore the work</a>
+          <a class="button secondary" href="#civiccanopy">Explore CivicCanopy</a>
         </div>
       </div>
     </section>
 
     <div class="hero-strip" aria-label="Key organization facts">
       <div class="strip-item">
-        <strong>Nairobi based</strong>
-        <span>Rooted in Kenya and working with communities, schools, local partners, and volunteers.</span>
+        <strong>Rooted in Siaya</strong>
+        <span>Our programmes run in Siaya, working with communities, schools, local partners, and volunteers.</span>
       </div>
       <div class="strip-item">
         <strong>Land for rentals</strong>
@@ -1714,16 +1754,35 @@
       </div>
     </section>
 
+
+<section id="civiccanopy" class="canopy-section" aria-labelledby="canopy-title">
+<span class="canopy-kicker">CivicCanopy Network / A partnership initiative</span>
+<h2 id="canopy-title">Many hands. One canopy.</h2>
+<p>CivicCanopy brings a community-led partnership approach to Volunteers Without Borders Kenya: connecting local knowledge with volunteers, donors, technical expertise, and institutional support.</p>
+<p>Opportunity grows when we grow together. Our starting point is the people closest to the work, their priorities, and the places they depend on.</p>
+<div class="canopy-grid">
+<article class="canopy-card"><span class="canopy-number">01 / Listen first</span><h3>Let communities lead</h3><p>Local leaders identify priorities, shape proposed activities, and help define what meaningful progress looks like.</p></article>
+<article class="canopy-card"><span class="canopy-number">02 / Build the bridge</span><h3>Connect the right support</h3><p>Bring volunteers, funders, technical partners, and institutions together around a clearly defined community need.</p></article>
+<article class="canopy-card"><span class="canopy-number">03 / Grow what lasts</span><h3>Build lasting capability</h3><p>Develop practical projects with clear responsibilities, realistic resources, and progress that can be shared with communities and supporters.</p></article>
+</div>
+<div class="canopy-focus"><h3>One approach across our programmes</h3><p><a href="#empowerher">People and women-led livelihoods</a>: skills, safety, healthcare access, and enterprise. <a href="#africaconnect">Youth opportunity</a>: learning and exchange. <a href="#conservation">Living landscapes</a>: habitat restoration, wetland protection, and community stewardship.</p></div>
+<div class="canopy-links">
+<a href="mailto:johnpaulouma-mbasro@volunteerswithoutborders-kenya.org?subject=CivicCanopy%20partnership%20inquiry">Discuss a partnership</a>
+<a href="mailto:johnpaulouma-mbasro@volunteerswithoutborders-kenya.org?subject=CivicCanopy%20volunteer%20interest">Offer your skills</a>
+<a href="#projects">Explore the programmes</a>
+</div>
+</section>
+
     <section class="projects" id="projects">
       <div class="section-inner">
         <div class="section-head center">
           <span class="eyebrow" style="color: var(--green-dark);">Funding priorities</span>
-          <h2>Three practical ways donations and partnerships move the mission forward.</h2>
+          <h2>Practical ways donations and partnerships move the mission forward.</h2>
           <p>Every contribution strengthens practical service today while helping VWB Kenya build community assets that can sustain the work tomorrow.</p>
         </div>
         <div class="project-grid">
           <a class="project-card" href="#conservation">
-            <img src="assets/ai-kenya-bluegum-canopy.png" alt="Blue Gum Eucalyptus project proposal cover with trees and VWB logo">
+            <img loading="lazy" src="assets/ai-kenya-bluegum-canopy.png" alt="Blue Gum Eucalyptus project proposal cover with trees and VWB logo">
             <div class="card-body">
               <span class="card-tag">View conservation details</span>
               <h3>Blue Gum Eucalyptus Conservation</h3>
@@ -1731,7 +1790,7 @@
             </div>
           </a>
           <a class="project-card" href="#land-rentals">
-            <img src="assets/ai-kenya-partnership-pathways.jpg" alt="Local cultural exchange scene in Kenya">
+            <img loading="lazy" src="assets/ai-kenya-partnership-pathways.jpg" alt="Local cultural exchange scene in Kenya">
             <div class="card-body">
               <span class="card-tag">View lease details</span>
               <h3>Land & Rentals Sustainability</h3>
@@ -1739,7 +1798,7 @@
             </div>
           </a>
           <a class="project-card" href="#empowerher">
-            <img src="assets/ai-kenya-women-enterprise.jpg" alt="Women and volunteers at a fruit stand in Kenya">
+            <img loading="lazy" src="assets/ai-kenya-women-enterprise.jpg" alt="Women and volunteers at a fruit stand in Kenya">
             <div class="card-body">
               <span class="card-tag">View EmpowerHer</span>
               <h3>EmpowerHer Project</h3>
@@ -1747,7 +1806,7 @@
             </div>
           </a>
           <a class="project-card" href="#africaconnect">
-            <img src="assets/ai-kenya-youth-mobility.jpg" alt="Children in Mathare with a volunteer">
+            <img loading="lazy" src="assets/ai-kenya-youth-mobility.jpg" alt="Children in Mathare with a volunteer">
             <div class="card-body">
               <span class="card-tag">View AfricaConnect</span>
               <h3>Education, Health & Youth Mobility</h3>
@@ -1777,7 +1836,7 @@
     <section class="conservation" id="conservation">
       <div class="section-inner conservation-layout">
         <aside class="conservation-map">
-          <img src="assets/kenya-map.jpg" alt="Volunteers standing beside a map of Kenya">
+          <img loading="lazy" src="assets/kenya-map.jpg" alt="Volunteers standing beside a map of Kenya">
           <div class="map-copy">
             <h3>Bar O Lengu / Lake Kanyaboli Ecosystem</h3>
             <p>Located in Siaya County, Western Kenya, the ecosystem faces pressure from erosion, deforestation, charcoal burning, harmful fishing methods, and climate change.</p>
@@ -1867,7 +1926,7 @@
       <div class="section-inner">
         <div class="land-feature">
           <figure class="land-media">
-            <img src="assets/avocado-tree.jpeg" alt="Avocados growing on a tree">
+            <img loading="lazy" src="assets/avocado-tree.jpeg" alt="Avocados growing on a tree">
           </figure>
           <div class="land-feature-copy">
             <span class="eyebrow">Land rentals</span>
@@ -2076,7 +2135,7 @@
             </label>
 
             <div class="form-actions">
-              <button class="button" type="submit">Send inquiry</button>
+              <button class="button" type="submit">Prepare inquiry email</button>
               <button class="button secondary" type="reset">Clear form</button>
             </div>
 
@@ -2093,7 +2152,7 @@
           <h2>Empowering youth and women, combating sexual violence, and improving healthcare access.</h2>
           <p>EmpowerHer is a comprehensive initiative designed to address critical issues affecting youth and women in Siaya County and surrounding communities. The project seeks USD 49,000 to build confidence, self-sufficiency, safety, and healthier futures.</p>
           <figure class="empowerher-media">
-            <img src="assets/about-portrait.jpg" alt="Volunteer portrait for Volunteers Without Borders Kenya">
+            <img loading="lazy" src="assets/about-portrait.jpg" alt="Volunteer portrait for Volunteers Without Borders Kenya">
           </figure>
         </div>
         <div class="detail-panel">
@@ -2168,6 +2227,11 @@
       </div>
     </section>
 
+<section id="rewards" class="rewards-section" aria-labelledby="rewards-title"><span class="eyebrow">CivicCanopy supporter rewards</span><h2 id="rewards-title">Choose your part of the canopy.</h2><p class="rewards-intro">Support community programmes in Siaya and build a lasting connection to the work. Choose a supporter package or explore a personal tree dedication.</p><p>Contact our programme team to arrange your package. Benefits, contribution amount, and delivery timing are confirmed before payment.</p><div class="rewards-grid"><article class="reward-card"><span class="reward-label">CivicCanopy supporter</span><h3>Canopy Friend</h3><span class="reward-price">Suggested support: €25</span><p>A personal connection to community-led work.</p><ul><li>Digital thank-you certificate</li><li>Project updates by email</li></ul><a href="mailto:johnpaulouma-mbasro@volunteerswithoutborders-kenya.org?subject=CivicCanopy%20reward%20inquiry%3A%20Canopy%20Friend">Enquire about this reward</a></article>
+<article class="reward-card"><span class="reward-label">CivicCanopy supporter</span><h3>Community Builder</h3><span class="reward-price">Suggested support: €100</span><p>Hear directly about the work your support helps make possible.</p><ul><li>Digital thank-you certificate and project updates</li><li>Invitation to a group online project briefing</li></ul><a href="mailto:johnpaulouma-mbasro@volunteerswithoutborders-kenya.org?subject=CivicCanopy%20reward%20inquiry%3A%20Community%20Builder">Enquire about this reward</a></article>
+<article class="reward-card"><span class="reward-label">CivicCanopy supporter</span><h3>Canopy Champion</h3><span class="reward-price">Suggested support: €250</span><p>Help strengthen the connections behind lasting community programmes.</p><ul><li>Community Builder benefits</li><li>Optional recognition on our supporter page</li></ul><a href="mailto:johnpaulouma-mbasro@volunteerswithoutborders-kenya.org?subject=CivicCanopy%20reward%20inquiry%3A%20Canopy%20Champion">Enquire about this reward</a></article>
+<article class="reward-card"><span class="reward-label">CivicCanopy supporter</span><h3>Project Partner</h3><span class="reward-price">Suggested support: €750</span><p>Support a defined activity and hear from the people coordinating it.</p><ul><li>Digital certificate and project updates</li><li>A scheduled group briefing with programme leaders</li><li>Optional supporter recognition</li></ul><a href="mailto:johnpaulouma-mbasro@volunteerswithoutborders-kenya.org?subject=CivicCanopy%20reward%20inquiry%3A%20Project%20Partner">Enquire about this reward</a></article>
+<article class="reward-card premium"><span class="reward-label">Our premium reward</span><h3>Adopt a Tree · Legacy Tree Patron</h3><span class="reward-price">Tailored sponsorship · Amount agreed with our team</span><p>Dedicate a tree to someone you love, celebrate a milestone, or support a living legacy in Siaya. Your sponsorship can help fund the tree’s care and the restoration work around it.</p><ul><li>A personalised tree dedication certificate</li><li>A registered tree reference, photograph, and location record</li><li>Scheduled care updates over an agreed sponsorship period</li><li>A dedication message and optional supporter recognition</li></ul><a href="mailto:johnpaulouma-mbasro@volunteerswithoutborders-kenya.org?subject=CivicCanopy%20reward%20inquiry%3A%20Adopt%20a%20Tree%20%E2%80%94%20Legacy%20Tree%20Patron">Discuss adopting a tree</a></article></div><div class="reward-terms"><details><summary>How tree adoption works</summary><p>Adoption is a symbolic sponsorship and dedication. It does not transfer ownership of a tree or land, harvest rights, or a financial return. Before you contribute, our team will confirm the available tree, whether it is newly planted or already growing, its species, the care period, update schedule, and the arrangements if it dies or is damaged. Any planned harvesting will be disclosed before sponsorship is agreed.</p><p>Tree sponsorship supports an agreed care and conservation package; it is not sold as a carbon offset.</p></details><p>Prefer to support the work without a reward? <a href="https://buy.stripe.com/fZe9BA9vebKWa6k3cc">Give without a reward</a>. Organisations can <a href="mailto:johnpaulouma-mbasro@volunteerswithoutborders-kenya.org?subject=Corporate%20Canopy%20Partnership">discuss a Corporate Canopy Partnership</a>.</p></div></section>
     <section class="partners" id="partners">
       <div class="section-inner">
         <div class="section-head">
@@ -2203,7 +2267,7 @@
           <h2>People, places, and partnerships across Kenya.</h2>
         </div>
         <figure class="gallery-feature">
-          <img src="assets/gallery/vwb-mother-memory.jpeg" alt="Beloved mother with three girls in a garden setting">
+          <img loading="lazy" src="assets/gallery/vwb-mother-memory.jpeg" alt="Beloved mother with three girls in a garden setting">
           <figcaption>
             <span>Prof. Collette Aliwa Ouma-Mbasro</span>
             <strong>Chairperson of the Board (1949-2024)</strong>
@@ -2211,59 +2275,59 @@
           </figcaption>
         </figure>
         <div class="gallery-grid">
-          <img src="assets/gallery/vwb-friendship-table.jpg" alt="Volunteers and friends gathered around a restaurant table in Kenya">
-          <img src="assets/gallery/vwb-coast-camel.jpg" alt="Two volunteers riding a camel along the Kenyan coast">
-          <img src="assets/gallery/vwb-sports-field.jpg" alt="Volunteers and players gathered on a sports field in Kenya">
-          <img src="assets/ai-kenya-community-volunteers.jpg" alt="Community volunteers with children in Kenya">
-          <img src="assets/ai-kenya-aerial-farmland.png" alt="Aerial-style conservation and farmland visual">
-          <img src="assets/ai-kenya-local-leadership.jpg" alt="Local leadership and Kenya map field moment">
-          <img src="assets/ai-kenya-classroom.jpg" alt="Children studying in a Kenyan classroom">
-          <img src="assets/gallery/vwb-gallery-31.jpg" alt="Volunteers Without Borders Kenya field photo 12">
-          <img src="assets/ai-kenya-conservation-landscape.jpg" alt="Conservation landscape in Kenya">
-          <img src="assets/gallery/vwb-gallery-40.jpg" alt="Volunteers Without Borders Kenya field photo 21">
-          <img src="assets/ai-kenya-donor-fieldwork.jpg" alt="Volunteer fieldwork in a Nairobi market">
-          <img src="assets/ai-kenya-partnership-pathways.jpg" alt="Cultural partnership pathway scene">
-          <img src="assets/gallery/vwb-gallery-01.jpg" alt="Siaya agricultural and land stewardship photo 1">
-          <img src="assets/gallery/vwb-gallery-02.jpg" alt="Siaya agricultural and land stewardship photo 2">
-          <img src="assets/gallery/vwb-gallery-03.jpg" alt="Siaya agricultural and land stewardship photo 3">
-          <img src="assets/gallery/vwb-gallery-04.jpg" alt="Siaya agricultural and land stewardship photo 4">
-          <img src="assets/gallery/vwb-gallery-05.jpg" alt="Siaya agricultural and land stewardship photo 5">
-          <img src="assets/gallery/vwb-gallery-06.jpg" alt="Siaya agricultural and land stewardship photo 6">
-          <img src="assets/gallery/vwb-gallery-07.jpg" alt="Siaya agricultural and land stewardship photo 7">
-          <img src="assets/gallery/vwb-gallery-08.jpg" alt="Siaya agricultural and land stewardship photo 8">
-          <img src="assets/gallery/vwb-gallery-09.jpg" alt="Siaya agricultural and land stewardship photo 9">
-          <img src="assets/gallery/vwb-gallery-10.jpg" alt="Siaya agricultural and land stewardship photo 10">
-          <img src="assets/gallery/vwb-gallery-11.jpg" alt="Siaya agricultural and land stewardship photo 11">
-          <img src="assets/gallery/vwb-gallery-12.jpg" alt="Siaya agricultural and land stewardship photo 12">
-          <img src="assets/gallery/vwb-gallery-13.jpg" alt="Siaya agricultural and land stewardship photo 13">
-          <img src="assets/gallery/vwb-gallery-14.jpg" alt="Siaya agricultural and land stewardship photo 14">
-          <img src="assets/gallery/vwb-gallery-15.jpg" alt="Siaya agricultural and land stewardship photo 15">
-          <img src="assets/gallery/vwb-gallery-16.jpg" alt="Siaya agricultural and land stewardship photo 16">
-          <img src="assets/gallery/vwb-gallery-17.jpg" alt="Siaya agricultural and land stewardship photo 17">
-          <img src="assets/gallery/vwb-gallery-18.jpg" alt="Siaya agricultural and land stewardship photo 18">
-          <img src="assets/gallery/vwb-gallery-19.jpg" alt="Siaya agricultural and land stewardship photo 19">
-          <img src="assets/gallery/vwb-gallery-20.jpg" alt="Volunteers Without Borders Kenya field photo 1">
-          <img src="assets/gallery/vwb-gallery-21.jpg" alt="Volunteers Without Borders Kenya field photo 2">
-          <img src="assets/gallery/vwb-gallery-22.jpg" alt="Volunteers Without Borders Kenya field photo 3">
-          <img src="assets/gallery/vwb-gallery-23.jpg" alt="Volunteers Without Borders Kenya field photo 4">
-          <img src="assets/gallery/vwb-gallery-24.jpg" alt="Volunteers Without Borders Kenya field photo 5">
-          <img src="assets/gallery/vwb-gallery-25.jpg" alt="Volunteers Without Borders Kenya field photo 6">
-          <img src="assets/gallery/vwb-gallery-26.jpg" alt="Volunteers Without Borders Kenya field photo 7">
-          <img src="assets/gallery/vwb-gallery-27.jpg" alt="Volunteers Without Borders Kenya field photo 8">
-          <img src="assets/gallery/vwb-gallery-28.jpg" alt="Volunteers Without Borders Kenya field photo 9">
-          <img src="assets/gallery/vwb-gallery-29.jpg" alt="Volunteers Without Borders Kenya field photo 10">
-          <img src="assets/gallery/vwb-gallery-30.jpg" alt="Volunteers Without Borders Kenya field photo 11">
-          <img src="assets/gallery/vwb-gallery-32.jpg" alt="Volunteers Without Borders Kenya field photo 13">
-          <img src="assets/gallery/vwb-gallery-33.jpg" alt="Volunteers Without Borders Kenya field photo 14">
-          <img src="assets/gallery/vwb-gallery-34.jpg" alt="Volunteers Without Borders Kenya field photo 15">
-          <img src="assets/gallery/vwb-gallery-35.jpg" alt="Volunteers Without Borders Kenya field photo 16">
-          <img src="assets/gallery/vwb-gallery-36.jpg" alt="Volunteers Without Borders Kenya field photo 17">
-          <img src="assets/gallery/vwb-gallery-37.jpg" alt="Volunteers Without Borders Kenya field photo 18">
-          <img src="assets/gallery/vwb-gallery-38.jpg" alt="Volunteers Without Borders Kenya field photo 19">
-          <img src="assets/gallery/vwb-gallery-39.jpg" alt="Volunteers Without Borders Kenya field photo 20">
-          <img src="assets/gallery/vwb-gallery-41.jpg" alt="Volunteers Without Borders Kenya field photo 22">
-          <img src="assets/gallery/vwb-gallery-42.jpg" alt="Children learning in a Volunteers Without Borders Kenya classroom">
-          <img src="assets/gallery/vwb-gallery-43.jpg" alt="Community safety and service field photo">
+          <img loading="lazy" src="assets/gallery/vwb-friendship-table.jpg" alt="Volunteers and friends gathered around a restaurant table in Kenya">
+          <img loading="lazy" src="assets/gallery/vwb-coast-camel.jpg" alt="Two volunteers riding a camel along the Kenyan coast">
+          <img loading="lazy" src="assets/gallery/vwb-sports-field.jpg" alt="Volunteers and players gathered on a sports field in Kenya">
+          <img loading="lazy" src="assets/ai-kenya-community-volunteers.jpg" alt="Community volunteers with children in Kenya">
+          <img loading="lazy" src="assets/ai-kenya-aerial-farmland.png" alt="Aerial-style conservation and farmland visual">
+          <img loading="lazy" src="assets/ai-kenya-local-leadership.jpg" alt="Local leadership and Kenya map field moment">
+          <img loading="lazy" src="assets/ai-kenya-classroom.jpg" alt="Children studying in a Kenyan classroom">
+          <img loading="lazy" src="assets/gallery/vwb-gallery-31.jpg" alt="Volunteers Without Borders Kenya field photo 12">
+          <img loading="lazy" src="assets/ai-kenya-conservation-landscape.jpg" alt="Conservation landscape in Kenya">
+          <img loading="lazy" src="assets/gallery/vwb-gallery-40.jpg" alt="Volunteers Without Borders Kenya field photo 21">
+          <img loading="lazy" src="assets/ai-kenya-donor-fieldwork.jpg" alt="Volunteer fieldwork at a market">
+          <img loading="lazy" src="assets/ai-kenya-partnership-pathways.jpg" alt="Cultural partnership pathway scene">
+          <img loading="lazy" src="assets/gallery/vwb-gallery-01.jpg" alt="Siaya agricultural and land stewardship photo 1">
+          <img loading="lazy" src="assets/gallery/vwb-gallery-02.jpg" alt="Siaya agricultural and land stewardship photo 2">
+          <img loading="lazy" src="assets/gallery/vwb-gallery-03.jpg" alt="Siaya agricultural and land stewardship photo 3">
+          <img loading="lazy" src="assets/gallery/vwb-gallery-04.jpg" alt="Siaya agricultural and land stewardship photo 4">
+          <img loading="lazy" src="assets/gallery/vwb-gallery-05.jpg" alt="Siaya agricultural and land stewardship photo 5">
+          <img loading="lazy" src="assets/gallery/vwb-gallery-06.jpg" alt="Siaya agricultural and land stewardship photo 6">
+          <img loading="lazy" src="assets/gallery/vwb-gallery-07.jpg" alt="Siaya agricultural and land stewardship photo 7">
+          <img loading="lazy" src="assets/gallery/vwb-gallery-08.jpg" alt="Siaya agricultural and land stewardship photo 8">
+          <img loading="lazy" src="assets/gallery/vwb-gallery-09.jpg" alt="Siaya agricultural and land stewardship photo 9">
+          <img loading="lazy" src="assets/gallery/vwb-gallery-10.jpg" alt="Siaya agricultural and land stewardship photo 10">
+          <img loading="lazy" src="assets/gallery/vwb-gallery-11.jpg" alt="Siaya agricultural and land stewardship photo 11">
+          <img loading="lazy" src="assets/gallery/vwb-gallery-12.jpg" alt="Siaya agricultural and land stewardship photo 12">
+          <img loading="lazy" src="assets/gallery/vwb-gallery-13.jpg" alt="Siaya agricultural and land stewardship photo 13">
+          <img loading="lazy" src="assets/gallery/vwb-gallery-14.jpg" alt="Siaya agricultural and land stewardship photo 14">
+          <img loading="lazy" src="assets/gallery/vwb-gallery-15.jpg" alt="Siaya agricultural and land stewardship photo 15">
+          <img loading="lazy" src="assets/gallery/vwb-gallery-16.jpg" alt="Siaya agricultural and land stewardship photo 16">
+          <img loading="lazy" src="assets/gallery/vwb-gallery-17.jpg" alt="Siaya agricultural and land stewardship photo 17">
+          <img loading="lazy" src="assets/gallery/vwb-gallery-18.jpg" alt="Siaya agricultural and land stewardship photo 18">
+          <img loading="lazy" src="assets/gallery/vwb-gallery-19.jpg" alt="Siaya agricultural and land stewardship photo 19">
+          <img loading="lazy" src="assets/gallery/vwb-gallery-20.jpg" alt="Volunteers Without Borders Kenya field photo 1">
+          <img loading="lazy" src="assets/gallery/vwb-gallery-21.jpg" alt="Volunteers Without Borders Kenya field photo 2">
+          <img loading="lazy" src="assets/gallery/vwb-gallery-22.jpg" alt="Volunteers Without Borders Kenya field photo 3">
+          <img loading="lazy" src="assets/gallery/vwb-gallery-23.jpg" alt="Volunteers Without Borders Kenya field photo 4">
+          <img loading="lazy" src="assets/gallery/vwb-gallery-24.jpg" alt="Volunteers Without Borders Kenya field photo 5">
+          <img loading="lazy" src="assets/gallery/vwb-gallery-25.jpg" alt="Volunteers Without Borders Kenya field photo 6">
+          <img loading="lazy" src="assets/gallery/vwb-gallery-26.jpg" alt="Volunteers Without Borders Kenya field photo 7">
+          <img loading="lazy" src="assets/gallery/vwb-gallery-27.jpg" alt="Volunteers Without Borders Kenya field photo 8">
+          <img loading="lazy" src="assets/gallery/vwb-gallery-28.jpg" alt="Volunteers Without Borders Kenya field photo 9">
+          <img loading="lazy" src="assets/gallery/vwb-gallery-29.jpg" alt="Volunteers Without Borders Kenya field photo 10">
+          <img loading="lazy" src="assets/gallery/vwb-gallery-30.jpg" alt="Volunteers Without Borders Kenya field photo 11">
+          <img loading="lazy" src="assets/gallery/vwb-gallery-32.jpg" alt="Volunteers Without Borders Kenya field photo 13">
+          <img loading="lazy" src="assets/gallery/vwb-gallery-33.jpg" alt="Volunteers Without Borders Kenya field photo 14">
+          <img loading="lazy" src="assets/gallery/vwb-gallery-34.jpg" alt="Volunteers Without Borders Kenya field photo 15">
+          <img loading="lazy" src="assets/gallery/vwb-gallery-35.jpg" alt="Volunteers Without Borders Kenya field photo 16">
+          <img loading="lazy" src="assets/gallery/vwb-gallery-36.jpg" alt="Volunteers Without Borders Kenya field photo 17">
+          <img loading="lazy" src="assets/gallery/vwb-gallery-37.jpg" alt="Volunteers Without Borders Kenya field photo 18">
+          <img loading="lazy" src="assets/gallery/vwb-gallery-38.jpg" alt="Volunteers Without Borders Kenya field photo 19">
+          <img loading="lazy" src="assets/gallery/vwb-gallery-39.jpg" alt="Volunteers Without Borders Kenya field photo 20">
+          <img loading="lazy" src="assets/gallery/vwb-gallery-41.jpg" alt="Volunteers Without Borders Kenya field photo 22">
+          <img loading="lazy" src="assets/gallery/vwb-gallery-42.jpg" alt="Children learning in a Volunteers Without Borders Kenya classroom">
+          <img loading="lazy" src="assets/gallery/vwb-gallery-43.jpg" alt="Community safety and service field photo">
         </div>
       </div>
     </section>
@@ -2389,14 +2453,14 @@
 
   <footer>
     <div class="footer-inner">
-      <img src="assets/logo-wide.jpeg" alt="Volunteers Without Borders logo">
+      <img loading="lazy" src="assets/logo-wide.jpeg" alt="Volunteers Without Borders logo">
       <div>
         <strong>Volunteers Without Borders Kenya</strong><br>
         <a href="https://volunteerswithoutborders-kenya.org/">volunteerswithoutborders-kenya.org</a><br>
-        Nairobi, Kenya | <a href="mailto:johnpaulouma-mbasro@volunteerswithoutborders-kenya.org">johnpaulouma-mbasro@volunteerswithoutborders-kenya.org</a> | <a href="tel:+254724292776">+254 724 292 776</a><br>
+        Siaya, Kenya | <a href="mailto:johnpaulouma-mbasro@volunteerswithoutborders-kenya.org">johnpaulouma-mbasro@volunteerswithoutborders-kenya.org</a> | <a href="tel:+254724292776">+254 724 292 776</a><br>
         Board Secretary: <a href="mailto:stephenouma-mbasro@volunteerswithoutborders-kenya.org">stephenouma-mbasro@volunteerswithoutborders-kenya.org</a><br>
         Donations: <a href="https://buy.stripe.com/fZe9BA9vebKWa6k3cc">buy.stripe.com/fZe9BA9vebKWa6k3cc</a><br>
-        <a href="privacy.html">Privacy Policy</a>
+        <a href="#privacy-policy">Privacy Policy</a>
       </div>
       <div>2026 Volunteers Without Borders Kenya. All rights reserved.</div>
     </div>

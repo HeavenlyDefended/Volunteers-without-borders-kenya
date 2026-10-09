@@ -59,7 +59,7 @@ form.addEventListener("submit", async (event) => {
 
   if (!FORM_ENDPOINT) {
     window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
-    setStatus("Your email app is opening with the inquiry details.");
+    setStatus("Your email app is opening with the inquiry details. Please send the email to complete your inquiry.");
     return;
   }
 
